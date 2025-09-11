@@ -1,0 +1,62 @@
+
+@media (max-width:1024px) {
+  .banner__section {
+
+    height: 690px;
+
+  }
+
+  .gridbox3 {
+    flex-direction: column;
+  }
+
+  .flx-img {
+    width: 100%;
+    margin-top: 20px;
+
+  }
+
+
+
+
+
+}
+
+
+@media (max-width: 768px) {
+
+  .menu-bar {
+    display: block;
+  }
+
+  .navbar,
+  .nav-btn {
+    display: none;
+  }
+
+  .parentgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .gridbox1,
+  .gridbox2,
+  .gridbox3 {
+    grid-column: 1 / -1;
+
+  }
+
+  .featurecard{
+    
+    width: 100%;
+  }
+
+}
+
+@media(max-width: 567px) {
+  .banner__section {
+
+    height: 670px;
+
+  }
+
+}

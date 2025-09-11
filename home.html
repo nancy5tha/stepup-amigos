@@ -5,26 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/all.min.css"> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/uikit.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet" >
+    <link href="stylesheet" href="assets/css/responsive.css">
 
     <title>Step-up Amigos</title>
 </head>
 
 <body>
     <header>
-
-
         <div class="container">
             <div class=" header-nav flex flex-between flex-middle">
                 <img src="assets/img/stepup_logo1.png">
 
-                <nav class="navbar flex" id="navbar">
-                    <ul class=" nav flex flex-between ">
+                <!-- <nav class="navbar flex" id="navbar">
+                    <ul class=" nav flex flex-between">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About us </a></li>
+                        <li><a href="#">About us</a></li>
                         <li><a href="#">Pages</a></li>
+                        <li><a href="#">Contact us</a></li>
+
+                    </ul>
+
+                </nav> -->
+
+                <nav class="navbar flex" id="navbar">
+                    <ul class=" nav flex flex-between">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us </a>
+                            <div class="dropdown">
+                                <ul class="dropdown-nav">
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Pages</a>
+                            <div class="dropdown">
+                                <ul class="dropdown-nav">
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+
+
                         <li><a href="#">Contact Us</a></li>
 
                     </ul>
@@ -37,16 +65,13 @@
                 <div class="menu-bar flex" id="menu-bar">
                     <i class="fa-sharp fa-solid fa-bars-staggered"></i>
                 </div>
-
-
-
             </div>
         </div>
 
 
     </header>
 
-    <section class="banner__section">
+    <section class="banner__section flex">
         <div class="banner__content ">
 
             <h2><span class="yellow">Learn</span> More. Hear More<br>
@@ -54,10 +79,12 @@
             <p>Empowering the future with Data, Knowledge, and AI-driven Innovation. </p>
 
             <div class="get__started">
-                <a href="#" class="btn gradient-btn get__started_btn">Get Started Now</a>
+                <a href="#" class="btn gradient-btn get__started_btn">Get Started Now<img
+                        src="assets/img/up slant arrow.png"></a>
             </div>
-
-            <img class="handbulb" src="assets/img/hand&bulb.gif">
+            
+                <img class="handbulb" src="assets/img/hand&bulb.gif">
+            
 
         </div>
         <div class="line"></div>
@@ -66,10 +93,10 @@
 
 
 
-    <section class="second_section ">
+    <section class="whystepup_section ">
         <div class="container">
-            <h2 class="second_section_h">what makes setup <br>amigos different?</h2>
-            <p class="second_section_para">Dive into emerging industries, challenge your knowledge with quizzes,<br> and
+            <h2 class="whystepup_section_h">what makes setup <br>amigos different?</h2>
+            <p class="whystepup_section_para">Dive into emerging industries, challenge your knowledge with quizzes,<br> and
                 earn rewards—all in one
                 platform.
             </p>
@@ -97,7 +124,7 @@
     </section>
 
 
-    <section class="third_section">
+    <section class="join_movement_section">
         <div class="container">
             <h2>Join The StepUp<br> Movement</h2>
             <p>Our growing community is learning, playing,<br> and earning.be the next success story.</p>
@@ -105,14 +132,14 @@
             <div class="parentgrid">
 
                 <div class="gridbox1">
-                    <img src="assets/img/Group (1).png" alt="" class="third_section_img">
+                    <img src="assets/img/Group (1).png" alt="" class="join_movement_img">
                     <h2 class="outlined-text">1,000+</h2>
                     <h3>Registered Users</h3>
                     <p>Join thousands of users already gaining knowledge, rewards, and real opportunities.</p>
 
                 </div>
                 <div class="gridbox2">
-                    <img src="assets/img/Group (2).png" alt="" class="third_section_img">
+                    <img src="assets/img/Group (2).png" alt="" class="join_movement_img">
                     <h2 class="outlined-text">770+</h2>
                     <h3>Active Users
                     </h3>
@@ -120,7 +147,7 @@
                 </div>
                 <div class="gridbox3 flex">
                     <div class="gridbox">
-                        <img src="assets/img/Group 3.png" alt="" class="third_section_img">
+                        <img src="assets/img/Group 3.png" alt="" class="join_movement_img">
                         <h2 class="outlined-text">NPR 55,752+</h2>
                         <h3>Paid Out in Rewards</h3>
                         <p>We reward learning. Thousands of rupees paid out directly to our active users.</p>
@@ -133,54 +160,57 @@
 
     </section>
 
-    <section class="fourth_section">
+    <section class="register_now_section">
         <div class="container">
             <h2>Ready to Start? <br>Register Now — It's FREE</h2>
             <p>Don't just scroll—get involved.</p>
 
+
+
             <div class="features-container flex flex-wrap">
                 <div class="feature-card card1">
                     <img src="assets/img/laptopbook.png">
-                    <h3>Access to premium eBooks</h3>
+                    <h3>Access to <br>premium eBooks</h3>
                     <p>Instantly explore expert-written content across trending and practical topics.</p>
                 </div>
-                <div class="feature-card card2">
-                    <h3>Interactive Quizzes with Rewards</h3>
-                    <p>Make learning fun and profitable with engaging, gamified quizzes.</p>
+                <div class="feature-card card2 overlay-container">
+                    <h3>Interactive Quizzes <br>with Rewards</h3>
+                    <p>Make learning fun and profitable with <br>engaging, gamified quizzes.</p>
                 </div>
                 <div class="feature-card card3">
                     <div class="card3_bg">
                         <img src="assets/img/quiz.png">
                     </div>
-                    <h3>Earning Opportunities from Day 1</h3>
+                    <h3>Earning Opportunities <br>from Day 1</h3>
                     <p>Turn your time and knowledge into real income from the moment you sign up.</p>
                 </div>
             </div>
 
-            <!-- video banner -->
-
-            
-                <div class="video-banner flex ">
-
-                    <div class="video">
-                        <img src="assets/img/video.png" alt="video">
-                    </div>
 
 
+
+            <div class="video-banner flex  ">
+
+                <div class="video">
+                    <img src="assets/img/video.png" alt="video">
+                </div>
+
+                <div class="text-photos-flex flex">
                     <div class="text">
                         <h2>What Our <br> Users Are Saying</h2>
                         <p>Join a growing community of learners and earners who are transforming their free time into
                             knowledge and income. Don't just take our word for it—see what our users have to say!</p>
                     </div>
 
-                   
-                        <div class="photos">
-                            <div class="photos-bg">
-                                <img src="assets/img/photos.png" alt="multiple-photos">
-                            </div>
+
+                    <div class="photos">
+                        <div class="photos-bg">
+                            <img src="assets/img/photos.png" alt="multiple-photos">
                         </div>
+                    </div>
                 </div>
-            
+            </div>
+
 
 
         </div>
@@ -188,23 +218,21 @@
 
 
 
-
-
-
-    <section class="fifth_section">
+    <section class="ready_section">
         <div class="container flex">
-            <div class="fifth_section_img">
+            <div class="ready_section_img">
                 <img src="assets/img/fifth_sec_img.png" alt="">
             </div>
-            <div>
+            <div class="center-align">
                 <h2>Ready To Step Up?</h2>
                 <h3>Need Help registering?</h3>
                 <p>Watch our quick video tutorial to complete your registration in under 2 minutes. Thousands have
                     <br>already started learning, earning, and growing with StepUp Amigos. What are you waiting for?
                 </p>
 
-                <div class="stepup_movement_btn">
-                    <a href="#" class="btn gradient-btn get__started_btn">Get Started For Free</a>
+                <div class="stepup_movement_btn ">
+                    <a href="#" class="btn gradient-btn get__started_btn">Get Started For Free <img
+                            src="assets/img/up slant arrow.png"></a>
                 </div>
             </div>
 
@@ -218,7 +246,7 @@
             <div class="four-grid">
 
                 <div class="">
-                    <img src="assets/img/white-logo.png">
+                    <img src="assets/img/white-logoi.png">
                     <p>Watch our quick video tutorial to complete your registration in under 2 minutes. Thousands have
                         already started learning, earning, and growing with StepUp Amigos. What are you waiting for?</p>
                     <h3 class="firstgrid_h3">Connect With Us</h3>
@@ -241,13 +269,13 @@
                 <div class="explore_grid">
                     <h3>Explore</h3>
                     <ul>
-                        <li>Home</li>
-                        <li>Contact</li>
-                        <li>Our Franchise</li>
-                        <li>FAQ</li>
-                        <li>Terms And Conditions</li>
-                        <li>Privacy Policy</li>
-                        <li>Credentials</li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Our Franchise</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms And Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Credentials</a></li>
                     </ul>
                 </div>
                 <div class="contact-info">
@@ -285,14 +313,14 @@
                         <input type="text" placeholder="Enter your phone number" />
                         <div class=" subscribe-btn btn gradient-btn"><a href="#">subscribe</a></div>
                     </form>
-                    <img src="assets/img/grey-logoi.png" alt="">
+                    <img src="assets/img/grey-logo.png" alt="">
                 </div>
 
 
             </div>
 
             <h3 class="we_accept">We Accept</h3>
-            <div class="flex payment">
+            <div class="flex payment flex-wrap">
                 <img src="assets/img/secure.png">
                 <div class="vertical-line"></div>
                 <img src="assets/img/secured.png">
@@ -306,7 +334,7 @@
 
             <hr class="dashed-line">
 
-            <div class="footer-bottom flex flex-between">
+            <div class="footer-bottom flex flex-between flex-wrap">
                 <p>© 2025 stepup amigos. all rights reserved.</p>
                 <p>Designed & Developed By: Genesis Web Technology</p>
             </div>
@@ -316,8 +344,7 @@
 
 
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/uikit-icons.min.js"></script>
-    <script src="assets/js/uikit.min.js"></script>
+    
 </body>
 
 </html>
