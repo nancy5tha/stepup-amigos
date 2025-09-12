@@ -304,7 +304,7 @@ display: block;
 /* join_movement_section  */
 .join_movement_section {
   background-color: #EFF1D6;
-  padding: 50px;
+  padding: 50px 0;
 
 }
 
@@ -324,7 +324,7 @@ display: block;
   grid-template-columns: repeat(12, 1fr);
   /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
   gap: 25px;
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .gridbox1 {
@@ -385,7 +385,7 @@ display: block;
 /* register now section */
 .register_now_section {
   text-align: center;
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .features-container {
@@ -418,7 +418,7 @@ display: block;
   color: white;
   background-size: cover;
   background-position: center;
-  padding-top: 300px;
+  padding-top: 344px;
   border-radius: 10px;
 }
 
@@ -447,18 +447,22 @@ display: block;
 
 .card1 img,
 .card3 img {
-  width: 260px;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 25px;
 
+}
+
+.card3 img{
+  margin-bottom: 0;
 }
 
 
 .card3_bg {
   background-color: #EFF1D6;
   border-radius: 10px;
-  height: 260px;
-  width: 262px;
+  height: auto;
+  width: 100%;
   margin-bottom: 25px;
 }
 
@@ -469,8 +473,8 @@ display: block;
 .video-banner {
   background-color: #317C29;
   border-radius: 20px;
-  padding: 20px;
-  margin: 20px;
+  padding: 5px;
+  
 
 }
 
@@ -683,13 +687,13 @@ hr {
 
   .features-container {
     justify-content: left;
+    padding:35px 0;
   }
+.feature-card {
 
-  .feature-card {
-
-    width: 100%;
+    width: 45%;
   }
-
+  
 
 
   .explore_grid,
@@ -729,16 +733,14 @@ hr {
     display: none;
   }
 
-  .parentgrid {
-    grid-template-columns: 1fr;
-  }
+  
 
-  .gridbox1,
+  /* .gridbox1,
   .gridbox2,
   .gridbox3 {
     grid-column: 1 / -1;
 
-  }
+  } */
 
   .gridbox1 img,
   .gridbox2 img,
@@ -749,9 +751,12 @@ hr {
   .explore_grid,
   .contact-info,
   .subscribe {
-    margin-top: 30px;
+    margin-top: 15px;
 
   }
+
+  
+
 
   .video-banner {
     flex-direction: column;
@@ -761,12 +766,6 @@ hr {
   .video img {
     width: 100%;
   }
-
-
-
-
-
-
 
 
 
@@ -784,14 +783,43 @@ hr {
 
 }
 
+@media(max-width: 665px){
+
+  .parentgrid {
+    grid-template-columns: 1fr;
+  }
+  .gridbox1,
+  .gridbox2,
+  .gridbox3 {
+    grid-column: 1 / -1;
+
+  }
+
+      .feature-card {
+        width: 100%;
+    }
+
+}
+
+
 @media(max-width: 567px) {
   
 
   .explore_grid,
   .contact-info,
   .subscribe {
-    margin-top: 40px;
+    margin-top: 10px;
 
+  }
+
+  
+
+  .explore_grid h3{
+    margin: 0;
+  }
+
+  .explore_grid ul{
+    margin-left: -25px;
   }
 
 }
