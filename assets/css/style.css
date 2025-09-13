@@ -134,6 +134,9 @@ a:hover {
 
 
 
+.menu-header{
+  display: none;
+}
 
 .dropdown {
   display: none;
@@ -147,6 +150,7 @@ a:hover {
 .navbar ul li:hover .dropdown {
   display: block;
 }
+
 
 
 .dropdown-nav {
@@ -650,29 +654,6 @@ hr {
   margin-bottom: 10px;
 }
 
-/* .payment {
-  background-color: white;
-  border-radius: 10px;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 10px 25px;
-  gap: 20px;
-
-  align-items: center;
-  justify-content: center;
-
-}
-
-.payment img {
-  width: auto;
-  height: 43px;
-  margin-top: 8px;
-
-  padding-right: 20px;
-  margin-right: 20px;
-  border-right: 1px dashed black;
-} */
-
 
 .payment {
     background-color: white;
@@ -701,16 +682,6 @@ hr {
     padding: 0;
 }
 
-
-
-
-
-
-/* .vertical-line {
-  border-left: 1px dashed black;
-  height: 50px;
-  margin: 2px 5px;
-} */
 
 .payment img:last-child {
   border-right: none;
@@ -789,6 +760,11 @@ hr {
     display: block;
   }
 
+  .menu-close{
+    display: block;
+    text-align: right;
+  }
+
   .nav-btn {
     display: none;
   }
@@ -796,25 +772,23 @@ hr {
   .navbar {
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 250px;
-    height: 100vh;
+    left: -100%;
+    width:100%;
+    height: auto;
     background: white;
-    flex-direction: column;
     align-items: flex-start;
     padding: 30px 20px;
-    gap: 20px;
-    transition: right 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
     z-index: 1000;
   }
 
 
   .navbar.active {
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     left: 0;
     width: 100%;
     height: auto;
-    top: 83px;
+    top: 0;
   }
 
   .navbar ul {
@@ -825,15 +799,30 @@ hr {
 
  .navbar ul li  a {
     color: grey;
-    /* font-size: 20px; */
+ 
   }
 
+  #navbar-menu .nav > li:nth-child(odd) {
+  background-color: #f9f9f9; 
+}
+
+#navbar-menu .nav > li:nth-child(even) {
+  background-color: #ffffff; 
+}
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+}
+
  .navbar ul li a:hover{
-    color: white;
+    color: rgb(10, 66, 12);
   }
 
   .dropdown ul li a:hover{
-    color: grey;
+    color: rgb(21, 66, 29);
     background-color: #cdcdcd;
   }
 
@@ -843,7 +832,8 @@ hr {
   border-radius: 8px;
   margin-top: 5px;        
   transition: all 0.3s ease;
-  background-color: #241E1E;
+  background-color: #f3f3f3;
+  
 }
 
 
