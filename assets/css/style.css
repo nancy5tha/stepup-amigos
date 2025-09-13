@@ -230,7 +230,7 @@ a:hover {
   max-width: 100%;
   height: auto;
   position: relative;
-  /* bottom:-62px; */
+
 }
 
 
@@ -248,9 +248,7 @@ a:hover {
   height: 2px;
   width: 100%;
   background-color: black;
-  /* position: absolute;
-  bottom: 0;
-  z-index: -1; */
+ 
 
 
 
@@ -265,9 +263,7 @@ a:hover {
 
 }
 
-/* .banner__image {
-  margin-bottom: 10px; 
-} */
+
 
 
 /* whystepup section */
@@ -760,11 +756,7 @@ hr {
     display: block;
   }
 
-  .menu-close{
-    display: block;
-    text-align: right;
-  }
-
+  
   .nav-btn {
     display: none;
   }
