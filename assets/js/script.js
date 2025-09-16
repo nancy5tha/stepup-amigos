@@ -20,9 +20,10 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const menuBar = document.getElementById("menu-bar");
-  const navbarMenu = document.getElementById("navbar-menu");
+  const navbarMenu = document.getElementById("masthead");
   const closeBtn = document.getElementById("menu-close");
   const dropdownLinks = document.querySelectorAll("#navbar-menu .chevron");
+
 
   menuBar.addEventListener("click", () => {
     navbarMenu.classList.add("active");
