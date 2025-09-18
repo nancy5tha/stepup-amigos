@@ -113,11 +113,11 @@ a {
   color: black;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #dcdcdc;
 }
 
-.gradient-btn:hover{
+.gradient-btn:hover {
   background: linear-gradient(102.5deg, #E0AA32 16.16%, #95A240 55.19%, #317C29 94.23%);
 }
 
@@ -125,7 +125,8 @@ a {
   gap: 5px;
 }
 
-.navbar ul li , .nav ul li{
+.navbar ul li,
+.nav ul li {
   list-style: none;
 
 }
@@ -185,14 +186,11 @@ a {
   transition: left 0.5s ease-in-out;
 }
 
-.offcanvs-menu ul li a{
-  padding: 0 10px;
-}
 
-  #masthead .offcanvs-menu.nav>li:nth-child(odd) {
-    background-color: #f9f9f9;
-    padding: 10px 0;
-  }
+#masthead .offcanvs-menu.nav>li:nth-child(odd) {
+  background-color: #f9f9f9;
+  padding: 10px 0;
+}
 
 
 .offcanvs-menu .primary-menu {
@@ -207,18 +205,20 @@ a {
 
 /* Offcanvas dropdown wrapper */
 .offcanvs-dropdown {
-  max-height: 0;               /* Collapsed by default */
+  max-height: 0;
+  /* Collapsed by default */
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
   background: #f9f9f9;
   border-radius: 6px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   padding-left: 10px;
 }
 
 /* When open */
 .offcanvs-dropdown.show {
-  max-height: 500px;           /* adjust based on content */
+  max-height: 500px;
+  /* adjust based on content */
 }
 
 /* Submenu UL */
@@ -256,6 +256,13 @@ a {
 .offcanvs-menu .nav-btn {
   display: none;
 }
+
+.offcanvs-menu .nav {
+  gap: 0;
+  padding: 0;
+}
+
+
 
 .dropdown {
   display: none;
@@ -295,7 +302,7 @@ header#masthead.active .secondary-menu .nav {
   } */
 
 
-.navbar.active {
+/* .navbar.active {
   background: rgb(255, 255, 255);
   left: 0;
   max-width: 400px;
@@ -304,7 +311,7 @@ header#masthead.active .secondary-menu .nav {
   width: 100%;
   display: block;
   position: fixed;
-}
+} */
 
 
 
@@ -337,12 +344,12 @@ header#masthead.active .secondary-menu .nav {
 }
 
 .offcanvs-menu .dropdown {
-  
+
   position: static;
   background-color: white;
   min-width: 180px;
   border-radius: 8px;
-  
+
   box-shadow: none;
   margin-top: 3px;
 }
@@ -372,13 +379,27 @@ header#masthead.active .secondary-menu .nav {
   border-radius: 4px;
 }
 
-.secondary-menu {
+/* .secondary-menu {
   margin: 20px 0;
-}
+} */
 
 .chevron i {
   font-size: 10px;
   margin-top: 6px;
+}
+
+ #masthead .offcanvas-menu .nav>li:nth-child(odd) {
+    background-color: #f9f9f9;
+    /* padding: 10px 0; */
+  }
+
+  #masthead .offcanvas-menu .nav>li:nth-child(even) {
+    background-color: #ffffff;
+  }
+
+  .offcanvs-menu ul li  {
+    
+    padding: 10px;
 }
 
 /* 
@@ -1046,10 +1067,10 @@ hr {
     display: none;
   }
 
-    #masthead .nav>li:nth-child(odd) {
+  /* #masthead .nav>li:nth-child(odd) {
     background-color: #f9f9f9;
-    padding: 10px 0;
-  }
+    
+  } */
 
 
 }
@@ -1143,14 +1164,12 @@ hr {
 
 
 
-  #masthead .nav>li:nth-child(odd) {
+  /* #masthead .nav>li:nth-child(odd) {
     background-color: #f9f9f9;
-    padding: 10px 0;
+    /* padding: 10px 0; */
   }
 
-  #masthead .nav>li:nth-child(even) {
-    background-color: #ffffff;
-  }
+ 
 
   .menu-header {
     display: flex;
@@ -1173,15 +1192,6 @@ hr {
 
   .secondary-menu {
     display: block;
-  }
-
-  .dropdown {
-    display: none;
-    position: static;
-    border-radius: 8px;
-    margin-top: 5px;
-    transition: all 0.3s ease;
-    background-color: #f3f3f3;
   }
 
 
@@ -1223,7 +1233,7 @@ hr {
     margin-top: 0;
   }
 
-}
+
 
 @media(max-width: 665px) {
 
@@ -1292,24 +1302,26 @@ hr {
   }
 
   .offcanvs-menu .dropdown {
-  display: block !important; /* Always block, control visibility via max-height */
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-  position: static;
-  background-color: white;
-  min-width: 180px;
-  border-radius: 8px;
-  box-shadow: none;
-  margin-top: 3px;
-}
+    display: block !important;
+    /* Always block, control visibility via max-height */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    position: static;
+    background-color: white;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: none;
+    margin-top: 3px;
+  }
 
-.offcanvs-menu .dropdown.show {
-  max-height: 500px; /* Adjust if your dropdown content is taller */
-}
+  .offcanvs-menu .dropdown.show {
+    max-height: 500px;
+    /* Adjust if your dropdown content is taller */
+  }
 
 
-/* 
+  /* 
   .payment {
     flex-direction: column;
     gap: 15px;
@@ -1322,4 +1334,3 @@ hr {
     margin: 0 0 10px 0;
   } */
 }
-
